@@ -32,6 +32,7 @@
     > # phpmyadmin settings
     > Alias /phpmyadmin /usr/local/share/phpmyadmin
     > <Directory /usr/local/share/phpmyadmin/>
+    >   DirectoryIndex index.php
     >    Options Indexes FollowSymLinks MultiViews
     >    AllowOverride All
     >    <IfModule mod_authz_core.c>
