@@ -17,6 +17,7 @@
 - root in /usr/local/var/www
 - config in /usr/local/etc/httpd/httpd.conf
 - http://localhost:8080
+- enable mod_rewrite
 
 ## Mysql
 
