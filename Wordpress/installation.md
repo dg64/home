@@ -6,6 +6,9 @@
 - `sudo port select --list php` shows which version of php is installed
 - `sudo port select --set php php85` set as active a specific version of php
 - `sudo port install php-apache2handler` install the php module for apache
+- `sudo port install php85-mysql` install mysqli extension for php
+- `cp /opt/local/etc/php85/php.ini-development /opt/local/etc/php85/php.ini`
+- edit the php.ini file end uncomment the line "extension=mysql"; change with "extension=<path-to-mysqli.so"
 
 ## Apache
 
