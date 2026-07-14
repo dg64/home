@@ -44,3 +44,8 @@
     >       Allow from all
     >    </IfModule>
     > </Directory>
+
+- on mysql
+    > create database dg_bm character set utf8mb4 collate utf8mb4_0900_ai_ci;
+    > create user 'wordpress'@'localhost' identified by 'wordress';
+    > grant all privileges on dg_bm.* to 'wordpress'@'localhost' with grant option;
