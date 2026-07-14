@@ -47,5 +47,5 @@
 
 - on mysql
     > create database dg_bm character set utf8mb4 collate utf8mb4_0900_ai_ci;
-    > create user 'wordpress'@'localhost' identified by 'wordress';
+    > create user 'wordpress'@'localhost' identified with caching_sha2_password by 'wordpress';
     > grant all privileges on dg_bm.* to 'wordpress'@'localhost' with grant option;
