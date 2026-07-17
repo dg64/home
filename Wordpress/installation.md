@@ -46,6 +46,21 @@
     > </Directory>
 
 - on mysql
-    > create database dg_bm character set utf8mb4 collate utf8mb4_0900_ai_ci;
+    > create database wordpress set utf8mb4 collate utf8mb4_0900_ai_ci;
     > create user 'wordpress'@'localhost' identified with caching_sha2_password by 'wordpress';
-    > grant all privileges on dg_bm.* to 'wordpress'@'localhost' with grant option;
+    > grant all privileges on wordpress.* to 'wordpress'@'localhost' with grant option;
+
+## Wordpress
+
+- extract the zip file under /usr/local/var/www
+- modify the file /usr/local/var/www/wordpress/wp-config.php
+    - set database name, user and password for the connection
+- at the first login, you will be requested to create your username/password (this is different from the database user created previosly)
+:q
+
+
+
+
+
+
+
